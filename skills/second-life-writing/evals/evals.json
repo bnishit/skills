@@ -70,6 +70,31 @@
         "Does not turn the pause into a permanent end or invent a restart date",
         "Demonstrates that brief mode removes waste rather than dropping operational facts"
       ]
+    },
+    {
+      "id": 6,
+      "prompt": "Use $second-life-writing to rewrite these launch notes. We changed invoice reminders and need to tell people about the rollout. Support, Sales, and leadership may read it. I am not sure whether this is a quick announcement or something teams will use during rollout.",
+      "expected_output": "A concise clarification that recommends operational mode and asks whether to keep that depth, plus at most one audience question if a primary reader is needed. It should not draft the note yet because the missing source notes and mode materially affect the result.",
+      "files": [],
+      "expectations": [
+        "Recommends operational mode because several teams may reuse the rollout note",
+        "Explains the practical difference between operational and brief in one line",
+        "Asks no more than two questions and does not present four or more overlapping options",
+        "Does not ask for information already supplied, such as the named audience groups",
+        "Does not draft or invent the launch note before receiving the missing source notes and mode choice"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "$second-life-writing brief Rewrite this for Support in Slack: Search may be slow for some web users between 2 PM and 3 PM today during maintenance. Ask affected users to retry after 3 PM. Mobile is not affected.",
+      "expected_output": "A short Support-ready Slack message produced immediately, with no clarification question because the mode, audience, channel, timing, action, and limits are clear.",
+      "files": [],
+      "expectations": [
+        "Does not ask a clarification question or restate an assumption before writing",
+        "Produces a brief Slack-ready message for Support",
+        "Preserves the web scope, 2 PM to 3 PM timing, retry-after-3-PM action, and mobile exclusion",
+        "Does not invent a cause, outage status, owner, or escalation path"
+      ]
     }
   ]
 }

@@ -54,6 +54,8 @@ $second-life-writing operational draft the cross-team rollout note
 
 `brief` produces the shortest complete message. `operational` keeps the role-specific detail that teams need to act later. The skill chooses a mode when you do not name one.
 
+If mode or audience is unclear and the choice would materially change the result, the skill recommends an option and asks at most two questions. Clear requests proceed without a clarification round.
+
 Most agents also pick a skill up on their own when the task matches its description.
 
 ## Manual install

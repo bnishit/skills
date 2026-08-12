@@ -2,8 +2,9 @@
 name: second-life-writing
 description: >
   Write simple, audience-aware text that remains useful when reused. Supports brief mode for short-lived
-  messages and operational mode for cross-team or long-lived documents. Use for emails, Slack messages, PRDs,
-  specs, articles, release notes, announcements, reports, proposals, and any writing, drafting, or editing task.
+  messages and operational mode for cross-team or long-lived documents, with guided mode and audience choices
+  when they materially affect the result. Use for emails, Slack messages, PRDs, specs, articles, release notes,
+  announcements, reports, proposals, and any writing, drafting, or editing task.
 ---
 
 # Second-Life Writing
@@ -53,6 +54,37 @@ Use for launches, support notes, rollout plans, incident guidance, specs, and do
 
 Choose **operational** when the document affects several teams, changes customer access or money, or could cause harm if a detail is lost. Choose **brief** when the message is short-lived and one clear action matters most.
 
+### Ask Only When the Choice Matters
+
+Do not make the user decode the modes. Recommend one and explain the effect in one line.
+
+Ask before drafting when:
+
+- brief and operational would produce materially different outputs, and the context does not show which one the user needs
+- the primary audience is unknown, and that choice would change the content, actions, or structure
+- the document may be reused, but its lifespan or use is unclear
+
+Ask at most two questions in one turn. Choose only what blocks a good draft:
+
+1. **Mode:** Brief or operational?
+2. **Audience:** Who must be able to act on this?
+
+If the source text or a required decision is missing, ask for that instead of asking a question whose answer is already clear.
+
+Use an interactive question tool such as `AskUserQuestion` or `request_user_input` when available. Offer two or three clear options, put the recommended option first, and explain each option's effect. Do not offer four overlapping choices.
+
+Example:
+
+> I recommend **operational** because Support and Sales need different actions, and this note may be reused. Should I keep that depth, or make it a brief announcement?
+
+If only one detail is unclear, ask one question. Do not ask about mode and audience when the user has already supplied either answer.
+
+Do not interrupt for low-risk work. State the assumption and continue:
+
+> I’m treating this as a brief note for the Sales team.
+
+If no interactive question tool is available and the missing choice materially changes the result, ask the same concise question in plain text. If the user asked for speed, a draft, or a best effort, state the assumption and proceed.
+
 ---
 
 ## Rule 1: Simple English
@@ -73,9 +105,7 @@ For the full word swap table (what to avoid and what to use instead), see [refer
 
 ## Rule 2: Write for the Reader
 
-Before writing anything substantial, ask the user: "Who will read this?" and "Will other people or teams use this later?"
-
-For quick writing (Slack, short emails), figure out the audience from context.
+Before writing anything substantial, identify who will read it and whether other people or teams will reuse it. Ask only under the rules above. For quick writing, infer the audience from context when safe.
 
 Different audiences need completely different writing. Engineers need exact details with no room for guessing. Sales needs talking points they can say on a call. Support needs step-by-step troubleshooting. Execs need two paragraphs max.
 
@@ -131,9 +161,10 @@ Compression means no waste. It does not mean every document must be short.
 
 1. **Simple enough?** — Any sentence over 25 words? Any unnecessarily complex word? Fix them.
 2. **Right mode?** — Brief for the shortest complete message; operational when detail must survive reuse.
-3. **Every line useful?** — Does it add meaning, proof, action, a limit, or needed context?
-4. **Source-safe?** — Did you add a policy, promise, owner, example, or fact the source does not support?
-5. **Right audience?** — Would this actually help the person reading it?
-6. **Stands alone?** — Readable in six months with zero context?
-7. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
-8. **Right format?** — Should this be a document, or would a tool work better?
+3. **Needed a question?** — If mode or audience was materially unclear, did you recommend and ask without over-questioning?
+4. **Every line useful?** — Does it add meaning, proof, action, a limit, or needed context?
+5. **Source-safe?** — Did you add a policy, promise, owner, example, or fact the source does not support?
+6. **Right audience?** — Would this actually help the person reading it?
+7. **Stands alone?** — Readable in six months with zero context?
+8. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
+9. **Right format?** — Should this be a document, or would a tool work better?
