@@ -1,12 +1,9 @@
 ---
 name: second-life-writing
 description: >
-  Write in simple English that anyone can understand, calibrated precisely for the audience, and built to be
-  useful long after the author has moved on. Use this skill whenever Claude is producing ANY text for the user:
-  emails, Slack messages, PRDs, specs, articles, release notes, announcements, reports, proposals, or any
-  other writing. Even short messages benefit from audience clarity, simple language, and anti-slop filtering.
-  If Claude is writing words a human will read, this skill applies. Trigger on any writing, drafting, editing,
-  or content creation task — even casual messages.
+  Write simple, audience-aware text that remains useful when reused. Supports brief mode for short-lived
+  messages and operational mode for cross-team or long-lived documents. Use for emails, Slack messages, PRDs,
+  specs, articles, release notes, announcements, reports, proposals, and any writing, drafting, or editing task.
 ---
 
 # Second-Life Writing
@@ -18,6 +15,43 @@ Three rules, in order of importance:
 1. **Simple English** — use small words, short sentences, no showing off.
 2. **Write for the reader, not yourself** — change your language, depth, and structure based on who reads this.
 3. **Build for the second life** — your writing will be reused. Make sure it works without you.
+
+---
+
+## Choose a Mode
+
+Honor an explicit mode:
+
+- `$second-life-writing brief`
+- `$second-life-writing operational`
+
+Otherwise, choose from the reader's needs:
+
+### Brief
+
+Use for Slack updates, short emails, executive summaries, and messages with one main audience or action.
+
+- Lead with the result or ask.
+- Keep the context, action, risk, and limit the reader needs now.
+- Group audiences when they need the same information.
+- Produce the shortest complete version. Do not cut a fact merely to hit a word count.
+
+### Operational
+
+Use for launches, support notes, rollout plans, incident guidance, specs, and documents that several teams will reuse.
+
+- Preserve the facts, reasons, risks, actions, owners, and limits readers need later.
+- Separate audiences only when their actions or required detail differ.
+- Prefer useful bullets and short sections over dense prose.
+- Mark missing operating facts. Never invent them to make the document feel complete.
+- Stay inside the source. Do not create policies, metrics, owners, launch gates, workflows, or severity rules that the source does not support.
+- Use examples only from the current task. Never import people, industries, or scenarios from unrelated instructions or earlier work.
+- Produce an announcement when asked for an announcement. Do not expand it into a runbook, PRD, or test plan unless asked.
+- State shared context and actions once. Keep audience sections only for what differs.
+- Do not turn a risk or plausible outcome into a claimed goal or benefit.
+- Do not add a user flow, template, or framework unless the source provides it or the reader needs it to act.
+
+Choose **operational** when the document affects several teams, changes customer access or money, or could cause harm if a detail is lost. Choose **brief** when the message is short-lived and one clear action matters most.
 
 ---
 
@@ -45,7 +79,7 @@ For quick writing (Slack, short emails), figure out the audience from context.
 
 Different audiences need completely different writing. Engineers need exact details with no room for guessing. Sales needs talking points they can say on a call. Support needs step-by-step troubleshooting. Execs need two paragraphs max.
 
-When one document serves multiple audiences, do not write one version for everyone. Create clearly separated sections labeled plainly: "For Sales", "For Support."
+When one document serves multiple audiences, follow the selected mode. In operational mode, create separate sections when readers need different actions. In brief mode, group readers who need the same information.
 
 For detailed guidance on what each audience type needs, see [references/audience-guide.md](references/audience-guide.md).
 
@@ -78,10 +112,28 @@ For the full anti-slop checklist with examples, see [references/anti-slop.md](re
 
 ---
 
+## Make Every Line Earn Its Place
+
+Keep a line when it adds meaning, evidence, action, a limit, or context the reader needs. Cut repetition, throat-clearing, and detail that serves no reader.
+
+Run one compression pass after drafting:
+
+1. Remove lines whose loss changes nothing.
+2. Merge repeated points.
+3. Replace vague claims with one concrete detail.
+4. Stop before a cut removes meaning, proof, action, or needed context.
+
+Compression means no waste. It does not mean every document must be short.
+
+---
+
 ## Quick Check (before delivering)
 
 1. **Simple enough?** — Any sentence over 25 words? Any unnecessarily complex word? Fix them.
-2. **Right audience?** — Would this actually help the person reading it?
-3. **Stands alone?** — Readable in six months with zero context?
-4. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
-5. **Right format?** — Should this be a document, or would a tool work better?
+2. **Right mode?** — Brief for the shortest complete message; operational when detail must survive reuse.
+3. **Every line useful?** — Does it add meaning, proof, action, a limit, or needed context?
+4. **Source-safe?** — Did you add a policy, promise, owner, example, or fact the source does not support?
+5. **Right audience?** — Would this actually help the person reading it?
+6. **Stands alone?** — Readable in six months with zero context?
+7. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
+8. **Right format?** — Should this be a document, or would a tool work better?

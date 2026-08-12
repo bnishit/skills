@@ -34,7 +34,7 @@ npx skills update
 
 | Skill | What it does |
 |---|---|
-| [second-life-writing](skills/second-life-writing) | Writes in simple English, pitched at the actual reader, and still useful six months later. Applies to any text an agent writes for you — emails, Slack, PRDs, release notes. Also strips the usual AI slop. |
+| [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
 | [openrouter-integration](skills/openrouter-integration) | Everything needed to wire an app into OpenRouter's 300+ models: model discovery, multimodal chat, image generation, exact per-call cost lookup, provider fallbacks, tool calling, and Next.js / Express starter templates. |
 
 ## Using them
@@ -44,6 +44,15 @@ Once installed, name the skill in your prompt:
 ```
 $second-life-writing draft the launch email for the new billing flow
 ```
+
+Choose a mode when the tradeoff matters:
+
+```
+$second-life-writing brief rewrite this Slack update
+$second-life-writing operational draft the cross-team rollout note
+```
+
+`brief` produces the shortest complete message. `operational` keeps the role-specific detail that teams need to act later. The skill chooses a mode when you do not name one.
 
 Most agents also pick a skill up on their own when the task matches its description.
 

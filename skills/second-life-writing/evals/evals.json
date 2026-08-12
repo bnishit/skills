@@ -1,0 +1,75 @@
+{
+  "skill_name": "second-life-writing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "$second-life-writing brief Rewrite this Slack update for the sales team: We changed the invoice export flow. Earlier, users downloaded each invoice separately. They can now select up to 50 invoices and download one ZIP file. This is rolling out to web users from Monday. If ZIP creation fails, ask the user to retry once and then report the account ID and time in #invoice-support. The mobile flow has not changed.",
+      "expected_output": "A short Slack-ready update that leads with the user change and preserves the limit, rollout scope, failure action, reporting details, and mobile exclusion.",
+      "files": [],
+      "expectations": [
+        "Uses brief mode and produces the shortest complete version without audience-by-audience sections",
+        "States that web users can select up to 50 invoices and download one ZIP file",
+        "Preserves the Monday rollout timing and says the mobile flow is unchanged",
+        "Preserves the retry-once instruction and the account ID, time, and #invoice-support reporting details",
+        "Does not invent a measured benefit, owner, platform, or rollout status"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "$second-life-writing operational Draft an internal rollout note for Support, Sales, Marketing, Growth, leadership, and Engineering. myBillBook is rolling out contextual feature paywalls. Earlier paywalls were maintained separately by platform and often used generic premium messages. A central backend setup will control feature copy and visuals, recommended plan, shown price, Trial or Talk to Sales options, and Upgrade or View Plans actions. Examples include Service Reminders, AI Reconciliation, e-Invoice, Godown, and Multi User. Risks include paid users seeing paywalls, wrong plans or prices, access remaining locked after upgrade, and platform differences. Teams must watch complaints and tickets and flag issues quickly to Sumit, Shyam, and BL. This must be stable before later renewal price and feature-mix work across legacy and new plans. Rollout date, scope, support channel, and source of truth are unknown.",
+      "expected_output": "A reusable cross-team rollout note with customer impact first, scannable risks, distinct team actions where needed, the renewal boundary, and unknowns marked without invention.",
+      "files": [],
+      "expectations": [
+        "Uses operational mode and explains the customer-visible contextual paywall before the backend mechanism",
+        "Preserves every backend-controlled element and all four material risk types",
+        "Gives Support and Sales clear, different actions and useful context for the other named teams",
+        "Preserves escalation to Sumit, Shyam, and BL and the later renewal dependency across legacy and new plans",
+        "Marks rollout date, scope, support channel, and source of truth as unknown without inventing values",
+        "Uses sections and bullets where they improve scanning, with no repeated audience content",
+        "Does not invent policies, launch gates, metrics, owners, severity rules, customer promises, or a detailed issue-report template",
+        "Uses only myBillBook examples from the prompt and does not import an unrelated industry or persona",
+        "Remains an announcement instead of expanding into a runbook, PRD, or test plan"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use $second-life-writing to turn these notes into a message for the CEO: The Android release moved from 14 August to 18 August because payment testing found two failures. Engineering fixed one. The second affects saved cards and remains open. The release owner recommends holding launch until it passes. The decision needed today is whether to keep the new date or remove the feature from this release.",
+      "expected_output": "A brief executive note that leads with the decision, preserves the open risk and dates, and avoids implementation detail or extra sections.",
+      "files": [],
+      "expectations": [
+        "Automatically chooses brief mode for a CEO decision note",
+        "Leads with the decision needed today",
+        "Preserves both dates, the two failures, the one remaining saved-card issue, and the recommendation to hold",
+        "Does not add a third option, claim verification, or hide the unresolved risk"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Use $second-life-writing to draft a launch handoff used by Support, Sales, QA, and Engineering. Customers can now restore deleted parties for 30 days. Support needs to identify deletion time and account ID. Sales should explain the 30-day limit but must not promise recovery. QA must test day 1, day 30, and day 31. Engineering owns restore failures. The rollout cohort and escalation channel have not been decided.",
+      "expected_output": "An operational handoff with separate actions for each team, the 30-day limit, boundary tests, ownership, and undecided rollout facts marked clearly.",
+      "files": [],
+      "expectations": [
+        "Automatically chooses operational mode because several teams need different actions",
+        "Keeps separate, useful instructions for Support, Sales, QA, and Engineering",
+        "Preserves the 30-day rule and the day 1, day 30, and day 31 QA cases",
+        "States that the cohort and escalation channel are undecided instead of inventing them",
+        "Does not compress away ownership, the Sales limit, or Support investigation fields",
+        "Does not add definitions, reasons, policies, workflow steps, or launch prerequisites that the prompt does not support",
+        "Does not expand the handoff with a generic customer-journey template or other unrelated structure"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "$second-life-writing brief Shorten this without losing decisions or limits: We will pause the referral campaign at 6 PM today. The pause applies only to new referrals in India. Existing referral rewards will still be paid. Finance must complete the pending payout file before the pause. Marketing must stop scheduled ads. Support should not tell customers that referrals are ending permanently. The campaign may restart after the fraud review, but no date has been approved.",
+      "expected_output": "A compact action note that removes repetition while retaining the scope, time, team actions, customer-language limit, and uncertain restart.",
+      "files": [],
+      "expectations": [
+        "Keeps the 6 PM timing, India-only scope, and distinction between new referrals and existing rewards",
+        "Preserves the Finance, Marketing, and Support actions",
+        "States that restart depends on fraud review and has no approved date",
+        "Does not turn the pause into a permanent end or invent a restart date",
+        "Demonstrates that brief mode removes waste rather than dropping operational facts"
+      ]
+    }
+  ]
+}
