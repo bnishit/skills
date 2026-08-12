@@ -34,7 +34,7 @@ npx skills update
 
 | Skill | What it does |
 |---|---|
-| [second-life-writing](skills/second-life-writing) | Writes compact, plain-English text for the actual reader. Every line must add meaning, proof, action, or needed context, and the result must still work when reused later. |
+| [second-life-writing](skills/second-life-writing) | Writes in simple English, pitched at the actual reader, and still useful six months later. Applies to any text an agent writes for you — emails, Slack, PRDs, release notes. Also strips the usual AI slop. |
 | [openrouter-integration](skills/openrouter-integration) | Everything needed to wire an app into OpenRouter's 300+ models: model discovery, multimodal chat, image generation, exact per-call cost lookup, provider fallbacks, tool calling, and Next.js / Express starter templates. |
 
 ## Using them
