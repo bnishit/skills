@@ -28,11 +28,14 @@ Install from `openrouter-skill`. Use `$openrouter-integration` in prompts.
 
 ## Capabilities
 
-- **Model Discovery** — search 300+ models by capability, price, or provider and build a picker in minutes
-- **Image Generation** — generate images via chat completions with presets for icons, OG images, and social assets
+- **Model Discovery** — search hundreds of models with live filters, sorting, pagination, aliases, and endpoint details
+- **Discount Discovery** — detect temporary provider promotions from endpoint metadata without double-discounting effective prices
+- **Image Generation** — use the dedicated Image API with live model capabilities and presets for icons, OG images, and social assets
 - **Multimodal Chat** — send text, images, and PDFs in the same conversation and parse any response type
 - **Cost Tracking** — look up exact cost per generation with real billing data, not estimates
+- **Spend Controls** — compare real workloads, inspect key and account headroom, and choose batch or service tiers deliberately
 - **Routing & Fallbacks** — route to cheapest provider and fall back automatically when one goes down
+- **Batch & Reasoning** — handle 24-hour batch work, reasoning details, latest aliases, and served service tiers
 - **Tool Calling** — agentic loops with safety limits and structured output with Zod validation
 - **Provider & Free Models** — filter by provider and find zero-cost models automatically
 - **Starter Templates** — Next.js and Express routes ready to copy, not configure
@@ -44,7 +47,8 @@ Install from `openrouter-skill`. Use `$openrouter-integration` in prompts.
 ## Example Prompts
 
 - `Use $openrouter-integration to add an OpenRouter model picker to this app.`
-- `Use $openrouter-integration to add image generation plus image and PDF chat support through an OpenRouter server route.`
+- `Use $openrouter-integration to compare discounted endpoints for this workload and add a safe fallback and spend cap.`
+- `Use $openrouter-integration to add dedicated Image API generation plus image and PDF understanding.`
 - `Use $openrouter-integration to make this OpenRouter workflow production-safe with the built-in best-practice playbooks for routing, tools, and observability.`
 
 ## Repository Layout

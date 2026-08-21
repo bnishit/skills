@@ -35,7 +35,7 @@ npx skills update
 | Skill | What it does |
 |---|---|
 | [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
-| [openrouter-integration](skills/openrouter-integration) | Everything needed to wire an app into OpenRouter's 300+ models: model discovery, multimodal chat, image generation, exact per-call cost lookup, provider fallbacks, tool calling, and Next.js / Express starter templates. |
+| [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
 
 ## Using them
 
