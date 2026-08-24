@@ -7,7 +7,17 @@ description: Use when the user wants to actually understand something deep, dens
 
 Teach one idea at a time, in plain words, starting from bedrock — and stop between chapters. The reader's working memory is small. Respect it and they learn; dump on it and they scroll.
 
-This skill is a braid of three things: first-principles reduction (find bedrock), second-life-writing (plain register), and the teach skill's pacing (small lessons, pauses, retrieval).
+## Composes with
+
+| Edge | Skill | When it fires |
+|---|---|---|
+| **reaches for** | `second-life-writing` | before drafting chapter 1, and as a check before every turn ends |
+| **reaches for** | `show-me` | the PICTURE slot — it draws the proof |
+| reached for by | `going-to-the-library` | when a book is pulled off its shelves |
+
+Works standalone too — the library is not required. This is the smallest unit of the stack: one hard idea, chaptered, paced by the learner's answers.
+
+**REQUIRED SUB-SKILL:** load `second-life-writing` before drafting chapter 1, and run its Quick Check on every chapter before the turn ends. The plain register is not restated here — it lives there.
 
 ## Step 1 — Find bedrock before writing anything
 
@@ -17,15 +27,30 @@ Then build the chain upward: bedrock → consequence → consequence → the ful
 
 A good bedrock test: the learner can check it against their own life in ten seconds, with no faith in the author required.
 
-## Step 2 — One chapter = one link
+## Step 2 — One chapter = seven slots
 
-A chapter teaches exactly one claim of the chain. Hard limits:
+A chapter is these seven slots, in this order, and nothing else. No slot takes a second paragraph. Count before you send.
 
-- **~120 words of prose.** If the chapter needs "and also", it's two chapters.
-- **At most one picture** (a small diagram, a tree, a two-line table — show-me shapes in chat). The picture shows the claim; it never adds a second claim.
-- **The claim itself appears as one bolded sentence.** Everything else in the chapter serves that sentence.
+1. **CARRY** — 1 sentence, ≤25 words. Their last answer in their own words, and the one thing it left open.
+2. **TITLE** — ≤8 words. The claim in plain words. No colon, no subtitle.
+3. **PROOF** — ≤3 sentences, ≤60 words. One concrete thing they can check against their own life. The object or scene first, the name for it second.
+4. **PICTURE** — one diagram, ≤7 labels, 0 sentences, drawn with `show-me`. It draws the PROOF. If it needs a caption to make sense, redraw it.
+5. **CLAIM** — exactly 1 sentence, ≤20 words, bolded. No "and", no semicolon, no em-dash.
+6. **COST** — 1 sentence, ≤30 words. What this claim makes false or expensive, so they have something to push against.
+7. **QUESTION** — 1 sentence, ≤25 words, answerable only from slots 3–6.
 
-Register (second-life rules): small words, short sentences. Concrete example first, name for it second. No term the reader hasn't already been given in plain words. If a sentence needs re-reading, rewrite it.
+**Prose budget: 140 words total across slots 1, 3, 6, 7.** Over budget means cut, never a second page.
+
+There is no connective-tissue slot. That is deliberate: bridge paragraphs are where a second claim hides.
+
+Four bans, because these survive every good intention:
+
+- **One em-dash per chapter, maximum.** A dash that withholds the payload ("the beloved has become a step — the thing you stood on") is the single biggest cause of "hard to read". Make it a full stop.
+- **No stage directions.** Any sentence whose subject is the reader's reaction or the chapter's own machinery. If it opens with Notice / Watch / Hold / Feel / This is precisely, it does not ship.
+- **No trailer for the next chapter.** The chapter ends on the QUESTION. Zero words about what comes next, in the body or the footer — a trailer steals the last word from the question and spoils the discovery the question exists to produce.
+- **One metaphor per chapter.** When the learner supplied one in their own answer, that is the one. Never paraphrase their metaphor into a synonym.
+
+Deliver in whatever medium the caller set (chat, or a one-screen page). The slots and the budget are the same in both. **A page with room left over is a correct page** — an empty-looking layout is not a reason to write more.
 
 ## Step 3 — Stop. Actually stop.
 
@@ -36,25 +61,24 @@ Their answer sets the pace:
 - Answers wrong or half-right → the gap is the next chapter. Re-ground; don't repeat.
 - Asks a why → follow it down. The why-chain is the map; detours on it are progress, not interruptions.
 
+Before the turn ends, say the four numbers to yourself: CARRY / PROOF / COST / QUESTION word counts, and their total against 140. Then append one line to the caller's record file: chapter number, chapter path, the QUESTION verbatim, the learner's answer verbatim, the next action. No record file means no state — say so and ask where it should live.
+
+And go back to the *previous* chapter's page: swap its question label to `ANSWERED <date>` and paste their answer under it. Otherwise it sits there forever asking something they answered a week ago.
+
 ## Step 4 — The souvenir comes last
 
 Only after the chain is walked, offer ONE compressed reference (an HTML page or chat tree of the full chain, each link one line). The reference is for re-finding, not for learning. Never open the teaching with the big page — a beautiful complete page at the start is exactly the failure this skill exists to prevent.
 
-## Red flags — you're about to lose the reader
+## When a second idea shows up mid-chapter
 
-- Three ideas in one message.
-- A diagram with more than ~7 labeled parts.
-- A named concept introduced before its plain-words version.
-- "While we're here…" (scope creep mid-chapter).
-- Delivering chapters 1–7 in one turn because "they're short".
-- The chapter question is answerable without having read the chapter.
+It becomes the next chapter. Write it into the chain and stop. Everything else the old red-flag list warned about is now enforced by the slot counts.
 
 ## Quick reference
 
 | Move | Rule |
 |---|---|
 | Syllabus | why-chain to bedrock, taught bottom-up |
-| Chapter | 1 claim, ≤120 words, ≤1 picture, claim bolded |
+| Chapter | 7 slots, 140 prose words, claim = 1 sentence |
 | Pause | end turn on 1 retrieval question, always |
 | Pace | learner's answer decides next link / re-ground / detour |
 | Big artifact | only at the end, as reference |

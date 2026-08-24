@@ -1,0 +1,93 @@
+{
+  "skill_name": "going-to-the-library",
+  "note": "Cases derived from a real run (Love & Marriage library, Aug 2026). The run produced a good record and a finished book, but drifted on writing register, duplicated position state across two files, and left old chapter pages asking questions already answered.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Let's go to the library on love and marriage. I'm fascinated by the idea of love and the idea of marriage and I want to actually understand it, broad and deep, not just search for a spouse.",
+      "expected_output": "First visit: the building, the shelves, the record, and a stop. The user picks the book.",
+      "files": [],
+      "expectations": [
+        "Asks what the user wants out of it BEFORE building anything, using AskUserQuestion, two or three questions in one turn",
+        "One question captures why they are here; the answer is quoted verbatim on the front desk with an invitation to correct it",
+        "One question captures what earns a spot on the shelf (influential / mind-changing / decision-useful / best steelman), multi-select",
+        "One question captures breadth -- one tradition or genuinely global -- and where empirical evidence sits",
+        "Recommends an option rather than making the user decode the choices, and skips any question the user has already answered",
+        "Checks for an existing library directory before building anything",
+        "Builds index.html, journey.html, souvenirs.html, shelves.html and RECORD.md, and states what each page answers",
+        "Delivers the map and stops -- does not start teaching a book in the same turn",
+        "Quotes the user's intention in their own words on the front desk, with an invitation to correct it",
+        "Assumes zero prior knowledge; treats any saved documents as bookmarks on one small labelled shelf, never as the syllabus",
+        "Never says 'the gap in your reading' or justifies a book by what the user has already covered",
+        "Front desk carries exactly one gold-bordered box and it is the pending question"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Pull the Symposium. Teach it.",
+      "expected_output": "Why-chain written into the record as the syllabus, then chapter 1 only, then a stop.",
+      "files": [],
+      "expectations": [
+        "Invokes BOTH required sub-skills: strip-it-down for the teaching and second-life-writing for the register",
+        "Writes the full why-chain into RECORD.md as the book's syllabus before teaching anything",
+        "Delivers chapter 1 only, as a one-screen page, and opens it in the browser",
+        "Chapter 1 visibly ties back to the user's intention rather than floating as abstract philosophy",
+        "Ends the turn on one retrieval question"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "[the learner answers chapter 3's question in their own words, half-right]",
+      "expected_output": "A complete turn: record appended, all renders updated, next chapter delivered, stop.",
+      "files": [],
+      "expectations": [
+        "Appends the full five-field block to RECORD.md: claim, ASKED verbatim, ANSWERED verbatim, READ, NEXT",
+        "Records the learner's answer uncorrected, including their own wording and metaphors",
+        "Treats the half-right answer as the next chapter's material rather than repeating chapter 3",
+        "Updates the STATE block at the top of RECORD.md before rendering any page",
+        "Updates journey.html: the finished stop, the new #now station, the solid-to-dashed boundary, the ring, the counters",
+        "Goes back to the PREVIOUS chapter page and marks its question answered with the learner's words",
+        "Updates only the question card and the where-you-are line on index.html, nothing else",
+        "The pending question is character-identical in RECORD STATE, index.html, journey.html#now and the live chapter page"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "[the learner answers the last question in the chain]",
+      "expected_output": "Book closed properly: souvenir, trophy plaque, stamped spine, journey collapsed, checkout offered.",
+      "files": [],
+      "expectations": [
+        "Builds the souvenir at souvenirs/<nn>-<slug>.html, numbered by the order the book was finished",
+        "The souvenir's talk-back panels are the work's strongest rivals, each aimed at what the learner actually said",
+        "Never treats the learner's own saved documents as the talk-back",
+        "Adds a filled plaque to souvenirs.html and removes one empty slot",
+        "Stamps the finished spine on shelves.html and links it to the souvenir",
+        "Collapses the finished book's journey station into a plaque and adds a line to the what-you-now-own ledger",
+        "Offers the checkout choice and stops; does not start the next book"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Back to the library on love and marriage.",
+      "expected_output": "A cold resume driven entirely by the record.",
+      "files": [],
+      "expectations": [
+        "Reads RECORD.md first and resumes from the recorded position instead of rebuilding",
+        "Recovers the exact pending question verbatim from the STATE block rather than re-deriving it",
+        "Does not re-teach a chapter already marked delivered",
+        "If a rendered page disagrees with the record, the record wins and the page is rebuilt"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "This is too simplistic -- a card per book tells me nothing.",
+      "expected_output": "Depth through chaptering, not through a bigger page.",
+      "files": [],
+      "expectations": [
+        "Does not respond by building one large complete deep-dive page",
+        "Responds by pulling a book and teaching its chain one chapter per turn",
+        "Explains the fix in one line without a lecture on the method"
+      ]
+    }
+  ]
+}

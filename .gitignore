@@ -7,3 +7,4 @@ __pycache__/
 .env.production.local
 .env.test.local
 node_modules/
+.gstack/

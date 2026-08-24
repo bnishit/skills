@@ -1,6 +1,8 @@
 # Skills
 
-Agent skills I use every day, kept in one place so any agent — Claude Code, Codex, Cursor, and the rest — reads the same copy.
+Agent skills for **writing, thinking, and understanding a topic deeply** — kept in one place so any agent (Claude Code, Codex, Cursor, and the rest) reads the same copy.
+
+They are built to be used together. Name the outer one and the inner ones fire on their own, at the moment they are needed. See [The stack](#the-stack).
 
 ## Install
 
@@ -34,8 +36,52 @@ npx skills update
 
 | Skill | What it does |
 |---|---|
+| [going-to-the-library](skills/going-to-the-library) | Maps a whole field before you go deep: who has answered the question best, how they disagree, where the argument is still live. Builds a persistent library you come back to. |
+| [strip-it-down](skills/strip-it-down) | Teaches one hard idea from bedrock, one claim per turn, and stops on a question until you answer. Seven counted slots per chapter, so it cannot drift into a wall of text. |
+| [apprentice](skills/apprentice) | Takes you from cannot-do to can-do across many sessions, with the state on disk. Every session ends with a rep you owe before the next one. |
 | [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
+| [show-me](skills/show-me) | Answers with the smallest visual that makes the point — a tree, a diff, pseudocode, a Mermaid diagram, or one focused HTML page when it earns the tab. |
 | [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
+
+## The stack
+
+Five of these are one thing. Three entry points, depending on what you actually want, and they share the same two finishers.
+
+```
+  "what's the landscape      "teach me this one      "I want to be able
+        on X?"                  hard thing"             to DO this"
+           │                         │                       │
+           ▼                         │                       ▼
+  going-to-the-library               │                  apprentice
+  maps the field, keeps              │                  one rep per session,
+  a library you return to            │                  state on disk
+           │                         │                       │
+           │  a book gets pulled     │                       │
+           ▼                         ▼                       │
+              strip-it-down                                  │
+    one claim per turn · stops on a question ◄───────────────┤
+                     │                                       │
+        ┌────────────┴────────────┐                          │
+        ▼                         ▼                          │
+     show-me            second-life-writing ◄────────────────┘
+  draws the proof      plain register · the budget is a gate
+```
+
+Each skill declares its edges in a **Composes with** table at the top of its `SKILL.md` — what it reaches for, what reaches for it, and the moment the handoff fires. The edges are load-bearing: `strip-it-down` will not draft a chapter without loading `second-life-writing` first, and the library will not teach a book except through `strip-it-down`.
+
+Each still works alone. `strip-it-down` needs no library; `second-life-writing` and `show-me` are general skills reached for by anything whose output a person has to read or look at.
+
+**Convention for adding a skill to the stack:** put a `Composes with` table at the top, and write required handoffs as `**REQUIRED SUB-SKILL:** load X at <moment>` at the point in the flow where they fire — not as a description of what X does. A pointer that summarises the other skill gets read as a substitute for it, and the handoff silently stops happening. Never require a skill that isn't in this repo.
+
+## Credit
+
+Some of these started as someone else's idea and were changed to fit how I work. Each derived skill says so in its own `SKILL.md`, with what was changed and why.
+
+| Skill | Based on | What changed |
+|---|---|---|
+| [apprentice](skills/apprentice) | Matt Pocock's `teach` | One state file instead of five, the learner's answers recorded verbatim, a rep owed every session, and a counted lesson contract so prose can't drift. |
+
+Skills built by others that pair well but are **not** bundled here, because they aren't mine to ship: `teach` and the wider engineering set (Matt Pocock), and `visual-explainer` (nicobailon, MIT) for the heavy HTML end of `show-me`.
 
 ## Using them
 

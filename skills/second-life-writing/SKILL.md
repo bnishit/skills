@@ -1,15 +1,24 @@
 ---
 name: second-life-writing
 description: >
-  Write simple, audience-aware text that remains useful when reused. Supports brief mode for short-lived
-  messages and operational mode for cross-team or long-lived documents, with guided mode and audience choices
-  when they materially affect the result. Use for emails, Slack messages, PRDs, specs, articles, release notes,
-  announcements, reports, proposals, and any writing, drafting, or editing task.
+  Use for any writing, drafting, or editing task — emails, Slack messages, PRDs, specs, articles,
+  release notes, announcements, reports, proposals — or when a draft was called dense, jargon-heavy,
+  or hard to read. Reach for this from another skill whenever that skill's output is prose a person reads.
 ---
 
 # Second-Life Writing
 
 Write so anyone can read it, the right people find it useful, and it still works six months from now when you're not around to explain it.
+
+## Composes with
+
+| Edge | Skill | When it fires |
+|---|---|---|
+| reached for by | `strip-it-down` | before drafting chapter 1, and as a check before every turn ends |
+| reached for by | `going-to-the-library` | for every word that reaches the reader — chapters, souvenir, front desk, shelves |
+| **reaches for** | — | this is the finisher; it hands off to nothing |
+
+Any skill whose output is prose a person reads should reach for this one. When the caller sets a word budget or a slot count, that budget is a gate here, not a suggestion.
 
 Three rules, in order of importance:
 
@@ -153,18 +162,19 @@ Run one compression pass after drafting:
 3. Replace vague claims with one concrete detail.
 4. Stop before a cut removes meaning, proof, action, or needed context.
 
-Compression means no waste. It does not mean every document must be short.
+Compression means no waste. It does not mean every document must be short — unless the caller set a budget or a slot count, in which case the budget is a gate: count, cut, and count again until it passes. Never spend the overflow on a second page.
 
 ---
 
 ## Quick Check (before delivering)
 
 1. **Simple enough?** — Any sentence over 25 words? Any unnecessarily complex word? Fix them.
-2. **Right mode?** — Brief for the shortest complete message; operational when detail must survive reuse.
-3. **Needed a question?** — If mode or audience was materially unclear, did you recommend and ask without over-questioning?
-4. **Every line useful?** — Does it add meaning, proof, action, a limit, or needed context?
-5. **Source-safe?** — Did you add a policy, promise, owner, example, or fact the source does not support?
-6. **Right audience?** — Would this actually help the person reading it?
-7. **Stands alone?** — Readable in six months with zero context?
-8. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
-9. **Right format?** — Should this be a document, or would a tool work better?
+2. **Inside the budget?** — If a word count, slot list, or page size was given, state the actual number against the limit. Over means cut.
+3. **Right mode?** — Brief for the shortest complete message; operational when detail must survive reuse.
+4. **Needed a question?** — If mode or audience was materially unclear, did you recommend and ask without over-questioning?
+5. **Every line useful?** — Does it add meaning, proof, action, a limit, or needed context?
+6. **Source-safe?** — Did you add a policy, promise, owner, example, or fact the source does not support?
+7. **Right audience?** — Would this actually help the person reading it?
+8. **Stands alone?** — Readable in six months with zero context?
+9. **No slop?** — Any filler, jargon, or AI patterns? Cut them.
+10. **Right format?** — Should this be a document, or would a tool work better?

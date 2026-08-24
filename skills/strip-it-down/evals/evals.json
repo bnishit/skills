@@ -1,0 +1,74 @@
+{
+  "skill_name": "strip-it-down",
+  "note": "Cases derived from a real 7-chapter run (Plato's Symposium, Aug 2026) that drifted 165 -> 311 words and never invoked second-life-writing. Each case targets a failure observed in that run.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Strip it down for me: Plato's Symposium. I know nothing about philosophy. Teach me chapter by chapter.",
+      "expected_output": "Chapter 1 only, built as the seven slots, ending on one retrieval question, and then the turn stops.",
+      "files": [],
+      "expectations": [
+        "Loads second-life-writing before drafting, and says so",
+        "Delivers exactly ONE chapter, not a syllabus dump and not chapters 1-3 because they are short",
+        "The chapter contains all seven slots in order: CARRY, TITLE, PROOF, PICTURE, CLAIM, COST, QUESTION",
+        "Prose across slots 1, 3, 6 and 7 totals 140 words or fewer, and the count is stated before sending",
+        "The CLAIM is exactly one sentence, 20 words or fewer, with no 'and', no semicolon and no em-dash",
+        "Ends the turn on the QUESTION with nothing after it -- no trailer for chapter 2, no offer to continue",
+        "Bedrock is checkable against ordinary experience in ten seconds, with no faith in Plato required"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Chapter 6 of the Symposium: Alcibiades bursts into the party drunk. He praises Socrates rather than Love. His word is atopos, out of place, meaning no category fits Socrates and nobody compares to him. That breaks Diotima's ladder, which needs the beloved to be one instance of beauty among many. Nobody in the room answers him and the book simply ends. Teach it. My last answer was: 'refusal is made up of obsession with one person, you want that one person, that is also love and that is forcing you to not climb the ladder.'",
+      "expected_output": "One chapter carrying ONE of those propositions, with the rest pushed into the chain as later chapters.",
+      "files": [],
+      "expectations": [
+        "Recognises that the source material holds four teachable propositions and teaches only one",
+        "Writes the unused propositions into the chain as later chapters rather than folding them in",
+        "CARRY quotes the learner's own words verbatim and is 25 words or fewer",
+        "Uses at most one em-dash in the whole chapter",
+        "Contains no stage directions -- nothing opening with Notice, Watch, Hold, Feel or This is precisely",
+        "Contains no sentence describing what the reader will feel or what the next chapter will do",
+        "Uses one metaphor only, and if the learner supplied one it uses the learner's word rather than a synonym"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Teach me how a database index works. Strip it down. I'm not an engineer.",
+      "expected_output": "Chapter 1 at bedrock, with a concrete object before any named concept.",
+      "files": [],
+      "expectations": [
+        "PROOF puts a physical object or scene first and the name for it second, never the term first",
+        "No named concept appears before its plain-words version",
+        "The PICTURE has 7 labels or fewer and carries no claim the prose does not already make",
+        "The QUESTION is answerable only from this chapter, and cannot be answered by someone who skipped it",
+        "Does not deliver a big reference page up front"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "That was great, keep going -- give me the next three chapters in one go so I can read them tonight.",
+      "expected_output": "Refuses the batch, delivers one chapter, explains the pacing in one line.",
+      "files": [],
+      "expectations": [
+        "Delivers exactly one chapter despite the explicit request for three",
+        "Does not pad the single chapter to compensate for refusing the batch",
+        "Still ends on one retrieval question and stops",
+        "Explains the one-chapter rule in a single line without lecturing"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "You're teaching me into a designed one-screen HTML page rather than into chat. Give me chapter 3.",
+      "expected_output": "The same seven slots and the same 140-word budget, in the page medium.",
+      "files": [],
+      "expectations": [
+        "Applies the identical slot list and word budget as the chat medium",
+        "Does not add connective prose to make the page look filled",
+        "Treats a page with empty space as correct rather than as a page needing more words",
+        "Appends the chapter block to the caller's record file with the question and answer verbatim",
+        "Goes back to the previous chapter's page and marks its question answered with the learner's words"
+      ]
+    }
+  ]
+}
