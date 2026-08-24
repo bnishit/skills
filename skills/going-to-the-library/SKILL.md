@@ -17,7 +17,7 @@ Every library is a directory: `~/dev/library/<topic-slug>/` holding `index.html`
 
 `index.html` — the front desk — is the user's single entry point, updated every visit. It shows: their **intention in their own words** (quoted, with an invitation to correct it), the book now open with its full chapter path and position marked, the pending question, doors to the shelves and past chapters, and the up-next candidates. If the user ever asks "where do I see X?", the answer must be the front desk; if it isn't, fix the front desk.
 
-**Breadth rule:** the user's own corpus (their Shelf, their documents) is the floor, not the syllabus. It earns at most one shelf of the map and talk-back panels in souvenirs. The curriculum itself spans the whole landscape — verify with WebSearch, teach from primary works. Every chapter must visibly tie back to the user's intention: a chapter about a glass of water opens by saying why it's a step toward love.
+**Assume zero.** Teach as if the user has read nothing — because saving something is not reading it. Their Shelf items and documents are bookmarks: context they collected for later, never evidence of knowledge, never the syllabus, never a frame. Never say "the gap in your reading," never justify a book by what they've "already covered," never quiz them on their own saves. Bookmarks may appear as one small labeled shelf on the map ("saved, not yet read") and nowhere else. The curriculum comes from the whole landscape — primary works first, WebSearch for currency. Every chapter must visibly tie back to the user's intention: a chapter about a glass of water opens by saying why it's a step toward love.
 
 The visit is step-by-step, never all at once:
 
@@ -36,7 +36,7 @@ Build the collection before rendering anything:
 | **Competing Schools** | 2–4 rival framings, each with its champion work and its core claim stated fairly. This shelf is the heart of the library. |
 | **Practical Authorities** | The people/institutions practitioners actually use — clinics, labs, firms, handbooks. |
 | **Live Debates** | Where experts disagree *right now*. Each debate: the question, the two sides, a representative voice per side. Use WebSearch — this shelf goes stale. |
-| **Already on Your Shelf** | Query the user's own Shelf library (`mcp__shelf__query_library` / `search_library`) for saved items touching the topic. Skip the shelf silently if nothing matches. |
+| **Already on Your Shelf** | The user's saved bookmarks touching the topic (query their Shelf). Label them "saved, not yet read" — they're collected context, not knowledge, and they never shape the curriculum. Skip the shelf silently if nothing matches. |
 
 Every item gets: title, author, year, one line on **what it argues**, one line on **why it earned its shelf**, and (where true) **who pushes back**.
 
@@ -52,7 +52,7 @@ The library page is a map, not the territory — a card per book will correctly 
 
 **REQUIRED SUB-SKILL:** a pulled book is taught with `strip-it-down` — bedrock why-chain as the syllabus, one claim per turn in chat, pause on a retrieval question, pace set by the user's answers. Progress goes into `RECORD.md` every turn (see The Building).
 
-The **souvenir page** comes only when the book's chain is walked: one HTML page into the topic folder — the chain compressed (one line per link), the work's central image as an inline-SVG centerpiece, a numbered first-principles panel, and talk-back panels where the user's own corpus (their Shelf, documents they've authored) responds to the work. It's for re-finding, not for learning.
+The **souvenir page** comes only when the book's chain is walked: one HTML page into the topic folder — the chain compressed (one line per link), the work's central image as an inline-SVG centerpiece, a numbered first-principles panel, and talk-back panels where the work's strongest rivals and critics (other shelves of the map) respond. It's for re-finding, not for learning.
 
 Also in chat: "sit with a school" (steelman one framing), "watch a debate" (strongest live argument, both sides). Use WebSearch for currency.
 
@@ -68,4 +68,4 @@ Always end — page and conversation both — by carrying knowledge back to the 
 - **Inventing plausible books.** A fake citation destroys the entire library's credibility. Verify or omit.
 - **One-school libraries.** If every shelf agrees, you built a syllabus, not a library. Competing Schools must contain real disagreement.
 - **Answering instead of mapping.** The user asked for the landscape; your own take belongs only in the Checkout Desk lens, labeled as the librarian's note.
-- **Skipping the user's own Shelf.** Their saved items are the bridge between the library and their life.
+- **Treating the user's bookmarks as knowledge.** They saved it; they didn't read it. Building the curriculum around their corpus flatters them and teaches nothing. Assume zero.
