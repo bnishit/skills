@@ -13,7 +13,11 @@ A librarian's authority is the catalogue, not opinion. Every work on a shelf is 
 
 ## The Building — state, and one step at a time
 
-Every library is a directory: `~/dev/library/<topic-slug>/` holding `shelves.html` (the map), `RECORD.md` (the recording), and any souvenir pages. **Check for an existing one before building anything** — if the topic's directory exists, read `RECORD.md` and resume from the recorded position instead of starting over.
+Every library is a directory: `~/dev/library/<topic-slug>/` holding `index.html` (the front desk), `shelves.html` (the map), `RECORD.md` (the recording), `chapters/`, and any souvenir pages. **Check for an existing one before building anything** — if the topic's directory exists, read `RECORD.md` and resume from the recorded position instead of starting over.
+
+`index.html` — the front desk — is the user's single entry point, updated every visit. It shows: their **intention in their own words** (quoted, with an invitation to correct it), the book now open with its full chapter path and position marked, the pending question, doors to the shelves and past chapters, and the up-next candidates. If the user ever asks "where do I see X?", the answer must be the front desk; if it isn't, fix the front desk.
+
+**Breadth rule:** the user's own corpus (their Shelf, their documents) is the floor, not the syllabus. It earns at most one shelf of the map and talk-back panels in souvenirs. The curriculum itself spans the whole landscape — verify with WebSearch, teach from primary works. Every chapter must visibly tie back to the user's intention: a chapter about a glass of water opens by saying why it's a step toward love.
 
 The visit is step-by-step, never all at once:
 
