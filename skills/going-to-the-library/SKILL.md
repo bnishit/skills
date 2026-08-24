@@ -19,6 +19,8 @@ This skill is the front door of a three-skill stack. It does not work alone, and
 |---|---|---|
 | **reaches for** | `strip-it-down` | the moment a book is pulled — it teaches the chapters |
 | **reaches for** | `second-life-writing` | before the first word is drafted, and again as a check before every turn ends |
+| **reaches for** | `show-me` | diagrams inside a chapter or a souvenir page |
+| **reaches for** | `restock` | building the Live Debates shelf, and whenever a library is reopened after a gap |
 | reached for by | — | this is an entry point |
 
 **Not this skill, if** they want to be able to *do* something — yoga, Rust, negotiation tactics. That is a skill-acquisition workspace, not a catalogue. This skill orients in a body of thought: who has answered the question best, how they disagree, where the argument is still live. Its unit is a **work someone actually wrote**. When a pulled book is being taught chapter by chapter, that is `strip-it-down`, called from here — never a competing choice.
@@ -79,7 +81,7 @@ Build the collection before rendering anything:
 | **Modern Syntheses** | The best current "whole picture" books/papers — what a smart generalist reads today. |
 | **Competing Schools** | 2–4 rival framings, each with its champion work and its core claim stated fairly. This shelf is the heart of the library. |
 | **Practical Authorities** | The people/institutions practitioners actually use — clinics, labs, firms, handbooks. |
-| **Live Debates** | Where experts disagree *right now*. Each debate: the question, the two sides, a representative voice per side. Use WebSearch — this shelf goes stale. |
+| **Live Debates** | Where experts disagree *right now*. Each debate: the question, the two sides, a representative voice per side. **REQUIRED SUB-SKILL:** build this shelf with `restock`, and run it again whenever a library is reopened after a gap — this shelf goes stale, and so do the works on the other five. |
 | **Already on Your Shelf** | The user's saved bookmarks touching the topic (query their Shelf). Label them "saved, not yet read" — they're collected context, not knowledge, and they never shape the curriculum. Skip the shelf silently if nothing matches. |
 
 Every item gets: title, author, year, one line on **what it argues**, one line on **why it earned its shelf**, and (where true) **who pushes back**.

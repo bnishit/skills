@@ -41,6 +41,7 @@ npx skills update
 | [apprentice](skills/apprentice) | Takes you from cannot-do to can-do across many sessions, with the state on disk. Every session ends with a rep you owe before the next one. |
 | [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
 | [show-me](skills/show-me) | Answers with the smallest visual that makes the point — a tree, a diff, pseudocode, a Mermaid diagram, or one focused HTML page when it earns the tab. |
+| [restock](skills/restock) | What's happened lately on a topic, and — the part that matters — what on your shelf has since been superseded, corrected or retracted. |
 | [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
 
 ## The stack
@@ -52,10 +53,10 @@ Five of these are one thing. Three entry points, depending on what you actually 
         on X?"                  hard thing"             to DO this"
            │                         │                       │
            ▼                         │                       ▼
-  going-to-the-library               │                  apprentice
-  maps the field, keeps              │                  one rep per session,
-  a library you return to            │                  state on disk
-           │                         │                       │
+  going-to-the-library ◄── restock   │                  apprentice
+  maps the field, keeps    what's    │                  one rep per session,
+  a library you return to  changed   │                  state on disk
+           │               since     │                       │
            │  a book gets pulled     │                       │
            ▼                         ▼                       │
               strip-it-down                                  │
@@ -80,8 +81,9 @@ Some of these started as someone else's idea and were changed to fit how I work.
 | Skill | Based on | What changed |
 |---|---|---|
 | [apprentice](skills/apprentice) | Matt Pocock's `teach` | One state file instead of five, the learner's answers recorded verbatim, a rep owed every session, and a counted lesson contract so prose can't drift. |
+| [restock](skills/restock) | Matt Van Horn's [`last30days`](https://github.com/mvanhorn/last30days-skill) (MIT) | Points at an existing library rather than only producing a standalone brief; makes supersession a first-class output ("what on your shelf is now wrong", not just "what's new"); free no-key sources by default so it never fails closed. |
 
-Skills built by others that pair well but are **not** bundled here, because they aren't mine to ship: `teach` and the wider engineering set (Matt Pocock), and `visual-explainer` (nicobailon, MIT) for the heavy HTML end of `show-me`.
+Skills built by others that pair well but are **not** bundled here, because they aren't mine to ship: `teach` and the wider engineering set (Matt Pocock), [`last30days`](https://github.com/mvanhorn/last30days-skill) itself (Matt Van Horn — install it too; 19 sources, transcripts, prediction-market odds and an accumulating brief library, all of which `restock` deliberately does not do), and [`visual-explainer`](https://github.com/nicobailon/visual-explainer) (nicobailon, MIT) for the heavy HTML end of `show-me`.
 
 ## Using them
 
