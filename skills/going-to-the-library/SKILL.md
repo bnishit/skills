@@ -36,6 +36,8 @@ Follow the household visual rules (real names, no lorem ipsum, one page per ques
 
 The library page is a map, not the territory — a card per book will correctly be judged too simplistic. When the user pulls a book (or asks for depth), build a **Reading Room volume**: a separate HTML page that teaches that ONE work properly.
 
+**REQUIRED SUB-SKILL:** teach the volume with `strip-it-down` — chaptered, in chat, one claim per turn with a pause, bedrock-first. The HTML volume below is the *souvenir built at the end*, never the teaching itself.
+
 A volume is an eli5, not an essay:
 
 - **Diagrams carry the argument; prose captions them.** Every load-bearing idea in the work gets drawn (inline SVG) before it gets described. If the work has a central image (a ladder, a split circle, a cycle), that image IS the page's centerpiece.
