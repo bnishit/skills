@@ -18,7 +18,7 @@ Every library is a directory: `~/dev/library/<topic-slug>/` holding `shelves.htm
 The visit is step-by-step, never all at once:
 
 1. **First visit** → build shelves + `RECORD.md`, deliver the map, stop. The user picks the book.
-2. **A pulled book** → teach it with strip-it-down: write the why-chain into `RECORD.md` as that book's syllabus, then one link per turn with a pause. After EVERY chapter turn, append to `RECORD.md`: chapter delivered, the question asked, the user's answer. The record is what lets a fresh session pick up mid-book.
+2. **A pulled book** → teach it with strip-it-down: write the why-chain into `RECORD.md` as that book's syllabus, then one link per turn with a pause. Each chapter also lands as a one-screen page in `chapters/<book>-<nn>-<slug>.html` (one claim, one picture, the retrieval question at the bottom) and is opened in the browser on delivery. After EVERY chapter turn, append to `RECORD.md`: chapter delivered, the question asked, the user's answer. The record is what lets a fresh session pick up mid-book.
 3. **Book finished** → souvenir page into the topic folder, checkout-desk lens, mark the book done in the record. The user picks the next book.
 
 ## The Six Shelves
