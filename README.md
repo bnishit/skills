@@ -43,6 +43,7 @@ npx skills update
 | [show-me](skills/show-me) | Answers with the smallest visual that makes the point — a tree, a diff, pseudocode, a Mermaid diagram, or one focused HTML page when it earns the tab. |
 | [restock](skills/restock) | What's happened lately on a topic, and — the part that matters — what on your shelf has since been superseded, corrected or retracted. |
 | [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
+| [product-hypothesis-pressure-test](skills/product-hypothesis-pressure-test) | Challenges a product mechanic through both users’ choices, counterexamples, and one small test. Keeps personal experience separate from evidence that the idea works. |
 
 ## The stack
 

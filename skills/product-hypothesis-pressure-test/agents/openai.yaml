@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product hypothesis pressure test"
+  short_description: "Challenge a mechanic and define the smallest useful test"
+  default_prompt: "Use $product-hypothesis-pressure-test to challenge my product idea through concrete user moments and propose one small test."
