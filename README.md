@@ -1,6 +1,6 @@
 # Skills
 
-Agent skills for **writing, thinking, and understanding a topic deeply** — kept in one place so any agent (Claude Code, Codex, Cursor, and the rest) reads the same copy.
+Agent skills for **writing, product design, and understanding a topic deeply** — kept in one place so any agent (Claude Code, Codex, Cursor, and the rest) reads the same copy.
 
 They are built to be used together. Name the outer one and the inner ones fire on their own, at the moment they are needed. See [The stack](#the-stack).
 
@@ -44,6 +44,10 @@ npx skills update
 | [restock](skills/restock) | What's happened lately on a topic, and — the part that matters — what on your shelf has since been superseded, corrected or retracted. |
 | [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
 | [product-hypothesis-pressure-test](skills/product-hypothesis-pressure-test) | Challenges a product mechanic through both users’ choices, counterexamples, and one small test. Keeps personal experience separate from evidence that the idea works. |
+| [feature-scoping](skills/feature-scoping) | Grounds a feature idea in what exists, resolves owner decisions, and coordinates a proportionate product/design handoff. |
+| [product-reviewer](skills/product-reviewer) | Specifies or reviews behavior from the user’s task, worry, defaults, and next step. |
+| [ux-reviewer](skills/ux-reviewer) | Specifies or reviews rendered screens, interaction states, accessibility, and exact copy. |
+| [product-editor](skills/product-editor) | Challenges a spec’s premise, cuts unnecessary features, and resolves product/design disagreements. |
 
 ## The stack
 
@@ -74,6 +78,22 @@ Each skill declares its edges in a **Composes with** table at the top of its `SK
 Each still works alone. `strip-it-down` needs no library; `second-life-writing` and `show-me` are general skills reached for by anything whose output a person has to read or look at.
 
 **Convention for adding a skill to the stack:** put a `Composes with` table at the top, and write required handoffs as `**REQUIRED SUB-SKILL:** load X at <moment>` at the point in the flow where they fire — not as a description of what X does. A pointer that summarises the other skill gets read as a substitute for it, and the handoff silently stops happening. Never require a skill that isn't in this repo.
+
+## Product and design workflow
+
+Start with `product-hypothesis-pressure-test` when the idea’s behavioral premise is uncertain. Use `feature-scoping` when you are ready to shape a feature.
+
+| Work | Default path |
+|---|---|
+| Bounded change to an existing screen | Scope → one combined product/UX spec → one editor pass |
+| New surface or major redesign | Scope → product and UX drafts → exchange → editor |
+| Review something already built | Product review for usefulness; UX review for interaction and craft |
+
+Product and UX reviewers judge the rendered experience without app source or diffs. The coordinator checks factual claims separately. A prototype proposes; it does not prove what the current product does. If a reviewer has already read the source, the pass must not be described as code-blind or independent.
+
+The four skills carry the same evidence distinctions in their own instructions so individual installs retain those safeguards. Each role can be used alone. Install the companions for the full scoping handoff; the scoping skill names any missing pass instead of pretending it ran. Separate agents are optional and require host support and authorization; sequential role passes are not independent reviews. No model, browser tool, industry, or release pipeline is prescribed.
+
+These four are adapted from the author’s heyAnaya workflow. The portable version keeps the distinct roles and lighter existing-screen path, removes private incident details and local tooling, and leaves the original project unchanged.
 
 ## Credit
 

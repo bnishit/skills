@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product reviewer"
+  short_description: "Judge a feature from the user\u2019s task, worry, and next step"
+  default_prompt: "Use $product-reviewer to review this user flow against the user\u2019s task and worries."

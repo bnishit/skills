@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX reviewer"
+  short_description: "Review real screens, interaction states, and exact copy"
+  default_prompt: "Use $ux-reviewer to review this interface and its interaction states using rendered evidence."

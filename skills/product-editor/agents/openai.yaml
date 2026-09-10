@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product editor"
+  short_description: "Challenge a spec\u2019s premise, make cuts, and resolve conflicts"
+  default_prompt: "Use $product-editor to evaluate this spec and recommend the necessary cuts or revisions."
