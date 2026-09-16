@@ -40,7 +40,7 @@ npx skills update
 | [strip-it-down](skills/strip-it-down) | Teaches one hard idea from bedrock, one claim per turn, and stops on a question until you answer. Seven counted slots per chapter, so it cannot drift into a wall of text. |
 | [apprentice](skills/apprentice) | Takes you from cannot-do to can-do across many sessions, with the state on disk. Every session ends with a rep you owe before the next one. |
 | [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
-| [write-a-book](skills/write-a-book) | Develops personal or reflective books, nonfiction, and fiction from source material or a premise through discovery, architecture, drafting, revision, and manuscript lock. |
+| [write-a-book](skills/write-a-book) | Develops personal or reflective books, nonfiction, and fiction—including literary/formal and ensemble/epic modes—from discovery through manuscript lock. |
 | [package-a-book](skills/package-a-book) | Turns a locked manuscript into verified EPUB, PDF, and optional reader-site editions without silently changing the prose. |
 | [improve-a-skill](skills/improve-a-skill) | Tests whether a reusable agent skill improves real work, then hardens it through blind baselines, observable gates, and bounded iteration. |
 | [show-me](skills/show-me) | Answers with the smallest visual that makes the point — a tree, a diff, pseudocode, a Mermaid diagram, or one focused HTML page when it earns the tab. |
@@ -100,7 +100,7 @@ conversations · notes · research · fictional premise
      art direction → EPUB · PDF · optional reader site → verify
 ```
 
-`write-a-book` changes its method by mode: Socratic discovery for unresolved personal material, evidence boundaries for nonfiction, and causal worldbuilding for fiction. `package-a-book` starts only after manuscript lock, records the source hash, and verifies that the same ordered prose reached each edition. Publication and deployment remain separate, explicit actions.
+`write-a-book` changes its method by mode: Socratic discovery for unresolved personal material, evidence boundaries for nonfiction, and causal, literary/formal, ensemble/epic, or hybrid architectures for fiction. `package-a-book` starts only after manuscript lock, records the source hash, and verifies that the same ordered prose reached each edition. Publication and deployment remain separate, explicit actions.
 
 ## Skill improvement workflow
 

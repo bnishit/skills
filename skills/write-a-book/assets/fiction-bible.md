@@ -2,11 +2,14 @@
 
 ## Story promise
 
+- Architecture: dramatic/causal | literary/uncanny/formal | ensemble/epic | hybrid
 - Genre and intended experience:
-- Protagonist, desire, and constraint:
+- Central character(s) or collective:
+- Organizing pressure, desire, and constraint:
 - Destabilizing change:
-- Central pressure:
 - Ending direction:
+
+Copy [fiction-literary-state.md](fiction-literary-state.md) when recurrence, negative space, dream logic, or form carries major story movement. Copy [fiction-ensemble-state.md](fiction-ensemble-state.md) when multiple viewpoints, factions, locations, or volumes must stay synchronized.
 
 ## Character ledger
 
@@ -28,10 +31,10 @@
 | Scene | Viewpoint | Immediate want | Opposition | Turn | Cost | Exit condition | Dependencies |
 |---|---|---|---|---|---|---|---|
 
-## Open threads
+## Promise and closure ledger
 
-| Thread | Introduced | Expected payoff | Current state |
-|---|---|---|---|
+| ID | Thread | Type | Strength | Scope | Introduced | Intended treatment | Setup or evidence | Current state |
+|---|---|---|---|---|---|---|---|---|
 
 ## Change propagation
 

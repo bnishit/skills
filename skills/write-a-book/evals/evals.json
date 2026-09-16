@@ -127,6 +127,81 @@
         "Establishes a story promise and provisional canon before or alongside a representative opening",
         "Treats the opening as a voice and story-engine prototype rather than scaling immediately to a full draft"
       ]
+    },
+    {
+      "id": 10,
+      "case_type": "failure",
+      "prompt": "Use $write-a-book to develop an intimate uncanny novel about a woman cataloguing her late sister's apartment. Each night one ordinary object is in a place it could not be, but I do not want a final ghost explanation or a thriller reveal. The story should carry grief, shame, and the sisters' unfinished intimacy through dream logic, recurring images of salt and moths, gaps in memory, and changes in sentence rhythm. Her grief cannot be the whole of her identity, and the painful material should not become spectacle. Do not draft chapters yet. Show me a book architecture, the state you would track, and how the ending can feel earned while leaving the phenomenon unresolved.",
+      "expected_output": "A literary-fiction architecture that treats emotional, imagistic, and formal change as real movement; keeps the uncanny pattern coherent without explaining it; and separates emotional closure from factual solution.",
+      "files": [],
+      "expectations": [
+        "Chooses the literary, uncanny, intimate, or formal architecture rather than forcing a conventional thriller engine",
+        "Defines felt dream-logic constraints and bounded interpretations while preserving ordinary anchors and reader orientation",
+        "Tracks negative space, motif transformation, voice and rhythm, and interior or relational movement in durable state",
+        "Keeps the protagonist's ordinary agency and future-facing life visible and applies a necessity boundary to intense material",
+        "Classifies the unexplained phenomenon separately from the character, relationship, thematic, and formal promises",
+        "Earns an open factual ending through completed emotional or relational movement rather than a late explanation"
+      ]
+    },
+    {
+      "id": 11,
+      "case_type": "representative",
+      "prompt": "Use $write-a-book to architect volume one of a five-book epic about an island confederacy splitting after the queen disappears. There are six point-of-view characters across three rival factions. Monsoon seasons close two straits, messages travel by ship, the admiral is hiding a defeat, and an uprising that looks spontaneous was caused by a tax bargain made months earlier. I need distinct arcs and voices, synchronized dates and travel, political cause and effect, controlled reveals, setup and payoff, and a credible convergence at the treaty city. Do not draft prose. Show the volume-one architecture, series horizon, state to track, and which promises close now versus later.",
+      "expected_output": "A bounded epic-fiction architecture with purposeful viewpoints, coupled faction and event causality, feasible travel and information flow, a caused convergence, and explicit volume-versus-series closure.",
+      "files": [],
+      "expectations": [
+        "Defines a separate contract for volume one and the five-book horizon so the first book is not only prologue",
+        "Gives every viewpoint distinct causal access, stake, arc movement, and voice anchors rather than equal page quotas",
+        "Creates synchronized event, location, travel, communication, faction, knowledge, and reveal state",
+        "Traces the uprising and other political turns through beliefs, resources, institutions, mechanisms, affected groups, and reactions",
+        "Makes convergence at the treaty city depend on prior decisions, routes, messages, and costs",
+        "Marks material promises as answered, transformed, deliberately open, or deferred with current-volume consequences"
+      ]
+    },
+    {
+      "id": 12,
+      "case_type": "representative",
+      "prompt": "Use $write-a-book to build the architecture for a formally unusual three-generation novel set in a slowly flooding city. Four point-of-view characters belong to opposing civic factions, but their chapters are interrupted by dream transcripts and disputed municipal files. Herons and rust recur; time sometimes loops at an emotional level but the flood, travel, and political decisions must remain physically coherent. The book should converge at an evacuation vote without explaining whether the dreams are shared or coincidental. Do not draft scenes. Show how you would manage form, voices, factions, chronology, reveals, motifs, and an ending that closes the human and political movement without flattening the mystery.",
+      "expected_output": "A hybrid architecture that assigns clear jobs to literary and ensemble methods, preserves physical causality alongside emotional looping, and resolves the vote and relationship movement without decoding the dreams.",
+      "files": [],
+      "expectations": [
+        "Names a lead architecture and states where literary or formal versus ensemble or epic rules govern",
+        "Keeps dream recurrence and motif change legible without making municipal chronology or travel ambiguous",
+        "Differentiates the four viewpoints through perception, values, language, agency, and faction position",
+        "Tracks document reliability, reader knowledge, faction beliefs, political decisions, and reveal timing",
+        "Causes the evacuation-vote convergence through accumulated choices and constraints",
+        "Closes the human and political promises while deliberately leaving the shared-dream question open"
+      ]
+    },
+    {
+      "id": 13,
+      "case_type": "boundary",
+      "prompt": "Use $write-a-book to write the opening of my novel exactly in a blend of Haruki Murakami, Hanya Yanagihara, Hideo Kojima, J.K. Rowling, and George R.R. Martin. I want Murakami dream logic, Yanagihara emotional extremity, Kojima mystery and motifs, Rowling long-series setup and payoff, and Martin factional scale. Make it sound recognizably like all five, not merely inspired by them. The opening follows a lonely archivist who receives a key from a city that officially drowned thirty years ago.",
+      "expected_output": "A brief imitation boundary followed by an original prototype built from abstract craft dimensions, without signature phrasing, borrowed worlds, or a recognizable blend of living creators' styles.",
+      "files": [],
+      "expectations": [
+        "Does not promise or attempt a recognizable stylistic blend of the named living creators",
+        "Briefly translates the request into high-level craft dimensions without lecturing or ending the task",
+        "Creates an original voice, image field, world, and character rather than borrowing signature elements or phrasing",
+        "Uses only the minimum state and architecture needed before a representative opening",
+        "Preserves long-sentence, ambiguity, motif, series-setup, and faction-scale options without presenting them as any creator's style",
+        "Treats the sample as a prototype whose voice and story contract remain open to the user's approval"
+      ]
+    },
+    {
+      "id": 14,
+      "case_type": "holdout",
+      "prompt": "Use $write-a-book to audit the ending of volume two in my planned trilogy. This volume promised that Mara would choose whether to expose her mother's forged treaty, that the salt-city council would face the food shortage it caused, and that Mara and her daughter would stop using coded letters. It also deepened three longer threads: why the drowned bells know people's names, who first tied the recurring red thread, and whether the rival house can collect an ancient debt. I want the bells to remain unexplained until volume three, and I do not want the red thread reduced to a one-line symbol. Show what the volume-two ending must answer, transform, leave deliberately open, or defer, plus the setup changes needed before lock.",
+      "expected_output": "A closure audit that distinguishes explicit volume obligations from thematic or series promises, requires current consequences for deferrals, preserves a developing motif, and propagates ending decisions backward into setup.",
+      "files": [],
+      "expectations": [
+        "Classifies plot, character, relationship, world-consequence, mystery, and motif promises rather than treating all open threads alike",
+        "Requires on-page treatment of the forged treaty choice, council-caused shortage, and coded-letter relationship within volume two",
+        "Allows the bells to defer only with a present-volume consequence and changed terms for volume three",
+        "Keeps the red thread developing through recurrence or changed charge rather than decoding it into one meaning",
+        "Distinguishes a deliberate series deferral from an abandoned ancient-debt setup",
+        "Lists backward setup and continuity propagation needed before manuscript lock"
+      ]
     }
   ]
 }

@@ -29,10 +29,31 @@ Score each dimension from 1 to 5 and cite passages or chapter-level evidence. A 
 
 ### Fiction
 
-- Plot turns arise mainly from character choices and prior consequences.
-- Character change is visible through decisions under increasing cost.
-- Timeline, knowledge, world rules, clues, and point of view stay coherent.
+- The architecture fits the intended reading experience instead of forcing every book into one plot model.
+- Movement is visible in the dimensions the chosen mode promises: choice and consequence, emotional pressure, interpretation, image, voice, relationship, or form.
+- Character change or deepening is visible through attention, avoidance, relationship, language, and costly choices.
+- Timeline, knowledge, world rules, clues, motifs, promises, and point of view stay coherent.
 - The premise's special mechanism intensifies the human story rather than replacing it.
+
+#### Literary, uncanny, intimate, or formal
+
+- Dream logic and ambiguity have felt constraints without being mechanically decoded.
+- Negative space creates pressure while basic orientation remains legible.
+- Image systems and rhythm change meaning rather than serving as decoration.
+- Trauma or grief does not erase ordinary life, agency, consequence, or ethical restraint.
+
+#### Ensemble, epic, or series
+
+- Every viewpoint supplies distinct access, agency, stake, and voice.
+- Faction turns follow beliefs, resources, institutions, communication, and reaction.
+- Time, travel, geography, knowledge, and reveal timing remain synchronized.
+- Convergence is caused by prior choices and constraints; each volume provides a meaningful local arc.
+
+#### Closure
+
+- Material plot, mystery, character, relationship, thematic, world, and formal promises have an intentional treatment.
+- Open mysteries complete a non-factual movement; deferred series promises still change the current volume.
+- Character debts and world consequences survive plot victory, and the ending does not decode every motif into one answer.
 
 ## Gates before lock
 
@@ -41,6 +62,8 @@ Do not lock while any of these remain:
 - a chapter has no unique job;
 - a central claim lacks a source or an explicit uncertainty label;
 - a major plot turn depends on missing causality;
+- a chosen ambiguity is indistinguishable from missing setup or continuity;
+- a volume-level promise has no recorded treatment;
 - a real person's motive is presented as fact without support;
 - named sensitive content violates an author boundary;
 - late changes have not been propagated through the ledgers and ending.
