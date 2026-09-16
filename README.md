@@ -2,7 +2,7 @@
 
 Agent skills for **writing, product design, and understanding a topic deeply** — kept in one place so any agent (Claude Code, Codex, Cursor, and the rest) reads the same copy.
 
-They are built to be used together. Name the outer one and the inner ones fire on their own, at the moment they are needed. See [The stack](#the-stack).
+They are built to be used together. Name the outer one and the inner ones fire on their own, at the moment they are needed. See [the learning stack](#the-learning-stack).
 
 ## Install
 
@@ -102,6 +102,31 @@ conversations · notes · research · fictional premise
 
 `write-a-book` changes its method by mode: Socratic discovery for unresolved personal material, evidence boundaries for nonfiction, and causal worldbuilding for fiction. `package-a-book` starts only after manuscript lock, records the source hash, and verifies that the same ordered prose reached each edition. Publication and deployment remain separate, explicit actions.
 
+## Skill improvement workflow
+
+`improve-a-skill` is for a skill that exists but has not yet earned trust. It first checks whether the job is recurring and whether an existing skill already covers it. A duplicate or generic “be clear and accurate” skill should be merged or deleted, not expanded.
+
+```text
+skill idea or observed failure
+            │
+            ▼
+    establish job and boundary
+            │
+            ▼
+ representative · boundary · failure cases
+            │
+            ▼
+ no-skill or previous-version baseline
+            │
+            ▼
+ one bounded change → regression + holdout tests
+            │
+            ▼
+ release · keep experimental · merge · delete
+```
+
+Each case gets three to six observable gates. Subjective work is repeated rather than declared reliable from one good answer. Deterministic checks, independent model review, and human judgment remain separate. Saved Shelf items and bookmarks are treated as leads—not as proof that the user read, endorsed, or verified them. The skill records changes that were rejected as well as changes that were kept.
+
 ## Product and design workflow
 
 Start with `product-hypothesis-pressure-test` when the idea’s behavioral premise is uncertain. Use `feature-scoping` when you are ready to shape a feature.
@@ -135,6 +160,19 @@ Once installed, name the skill in your prompt:
 
 ```
 $second-life-writing draft the launch email for the new billing flow
+```
+
+For a book project, keep writing and production separate:
+
+```text
+$write-a-book develop this conversation and source pack into a personal book
+$package-a-book turn this locked manuscript into EPUB, phone PDF, and a private reader site
+```
+
+To test whether a reusable skill genuinely helps:
+
+```text
+$improve-a-skill compare this skill with the no-skill baseline and harden the failures
 ```
 
 Choose a mode when the tradeoff matters:
