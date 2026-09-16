@@ -69,12 +69,28 @@ Initial hard-gate total was 28/30 for main and 29/30 for candidate. Pairwise pre
 
 The imitation finding caused one focused edit: the root and fiction reference now require a one-sentence translated craft brief before the prototype. A clean candidate rerun made the five requested dimensions explicit and satisfied the previously unverified gate. That rerun was not blind-paired and was longer at 1,489 words, so it is remediation evidence, not a revised full-suite score.
 
-A candidate-only causal-fiction regression produced a named dramatic/causal architecture, a causal chapter map, and a warm representative opening. Five of six existing gates were observable; durable world-rule and unresolved-canon state remained implicit rather than recorded. No paired main run was made, so regression status is incomplete.
+A causal-fiction regression produced a named dramatic/causal architecture, a causal chapter map, and a warm representative opening. Five of six candidate gates were observable; durable world-rule and unresolved-canon state remained implicit rather than recorded. The bounded follow-up below completes its main baseline.
 
 Across the five initial paired outputs, candidate responses totaled 7,596 words and main responses 9,283. The candidate was shorter overall because of the hybrid case, but the ensemble case shows a real over-architecture risk. No latency or token-cost conclusion is supported.
+
+### Bounded follow-up, 16 September 2026
+
+Both follow-up runners used `gpt-5.6-luna`, high reasoning, ephemeral contexts, and the same prompts and tool permissions as their earlier paired runs. The main cozy run used the unchanged frozen main snapshot. Gates below were reviewed by the implementing agent, not a new blind grader. Raw outputs and generated artifacts remain in the lab workspace under `work/`.
+
+| Check | Evidence | Decision |
+|---|---|---|
+| Cozy case 4 paired baseline | Main passes 6/6: its saved project contains a causal chapter ledger and open questions; its fiction bible records magic limits, desire, constraint, and canon; its chapter is a warm prototype. Candidate remains 5 passed / 1 unverified because equivalent durable state was implicit. | Retain this as an observed candidate gap in one paired trial; no claim that the skill edit caused it. |
+| Epic verbosity diagnosis | Original candidate had seven field checklists after already populated POV, faction, timeline, travel, reveal, and closure material. It was 2,932 words versus main's 2,441. | Test one local instruction asking populated tables to serve as state, facts to appear once, and unused scene fields to wait until drafting. |
+| Epic rerun with that instruction | The saved architecture grew to 7,397 words plus a 115-word reply. It retained a separate state table and revision checklist. | Reject and revert the trial instruction; no observable cost improvement. The original epic reference is preserved. |
+
+The rejected epic trial passed the volume/series contract, purposeful viewpoints, political causality, and closure gates. It failed synchronized state and credible convergence: the route table requires 8–10 days for Nara's journey and gives a 14 November departure, while both timeline and chapter ledger place it on 18–23 November. The Crown receives the same summons on 13 September in the route table but 6 November in the event timeline. The claimed twenty-four-chapter structure also contains twenty-six chapters. A list of controls therefore did not establish consistent execution of those controls.
+
+The epic runner read the first forty lines of an unrelated flood-novel architecture while checking existing workspace state; it did not read earlier epic answers. This exposure and single-run variance limit causal attribution. It does not alter the rejection decision: the trial failed its intended cost and continuity outcomes. No further instruction changes or repeated trials were attempted.
+
+For cost context, main's cozy artifacts total 4,156 words plus a 162-word reply, versus the earlier candidate's 2,260-word inline output. Main used 25,322 reported tokens; the rejected epic run used 74,359. Earlier comparable token figures were not retained, so these are observations, not a token-cost comparison.
 
 ## Release statement
 
 Custom validation passed frontmatter, JSON parsing, unique eval IDs, local Markdown links, and all fourteen eval records. `git diff --check` also passed.
 
-The branch is suitable for review and commit. Evidence supports the new architecture router, hybrid control, mode-specific state, and shared closure ledger. It does not yet support statistical reliability: every paired case ran once, the targeted repair ran once, and existing cases 3, 5, and a paired case 4 remain unrun. Before publication, run three trials for high-variance cases and complete the existing regression set.
+The branch is ready for parent review with the original fiction improvement preserved. The follow-up adds evidence only: its one proposed epic instruction was rejected and reverted. Literary, hybrid, closure, and visible trait-translation instructions are unchanged. The cozy pair now exposes a durable-state gap; epic verbosity remains unresolved. Every paired case ran once, the targeted imitation repair ran once, and existing cases 3 and 5 remain unrun. These are smoke results, not statistical reliability or publication clearance.
