@@ -1,0 +1,132 @@
+{
+  "skill_name": "write-a-book",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use $write-a-book to help me make a private book for my older brother before he moves abroad. I have voice notes about growing up together, some family messages, and many half-formed thoughts. I do not want you to draft yet. Interview me so the book sounds like me, but do not expose things our cousins told me privately.",
+      "expected_output": "A reflective-book setup that captures purpose and boundaries, begins a Socratic interview with one high-value question, and creates durable state without drafting prematurely.",
+      "files": [],
+      "expectations": [
+        "Chooses personal or reflective mode and does not treat the request as generic nonfiction",
+        "Creates or proposes a durable project state separating raw answers, editorial interpretations, settled decisions, and open questions",
+        "Asks one root-level question tied to a concrete memory or change rather than a batch questionnaire",
+        "Preserves the author's voice as an explicit goal without mechanically copying transcription errors",
+        "Treats cousins' private disclosures as unavailable without permission even if the author knows them",
+        "Does not draft chapters, promise packaging, or invent the brother's feelings"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Use $write-a-book to develop a practical nonfiction book arguing that small museums should design visits around questions rather than object categories. I have interviews with six curators, visitor notes, and a folder of published research. Start by making the book architecture and evidence plan. I suspect my interviews prove the approach improves learning.",
+      "expected_output": "A nonfiction architecture with a bounded thesis, claim ledger, rival explanations, and chapter questions that does not overclaim from six interviews.",
+      "files": [],
+      "expectations": [
+        "Chooses nonfiction mode and states a provisional intellectual promise",
+        "Separates curator interviews, visitor notes, published research, interpretation, and open verification work",
+        "Flags that six curator interviews do not by themselves prove improved visitor learning",
+        "Creates a claim and evidence plan including confidence, limitations, counterarguments, and citation status",
+        "Structures chapters as a cumulative inquiry rather than mirroring source-folder order",
+        "Does not fabricate studies, visitor outcomes, quotations, or sample sizes"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use $write-a-book to develop a literary speculative thriller. A person from 2026 travels back to the months before 9/11 knowing what will happen and tries to prevent it. Do not draft the novel yet. Help me find the strongest story engine, character arc, and causal outline. Keep it about credibility, institutions, moral cost, and unintended consequences—not a tactical reconstruction of the attack.",
+      "expected_output": "A high-level fiction development package that explores distinct story engines, recommends one, and tracks how knowledge without credible proof changes choices, institutions, relationships, and the timeline.",
+      "files": [],
+      "expectations": [
+        "Chooses fiction mode and honors the explicit non-tactical boundary",
+        "States a story promise built around a protagonist whose knowledge is powerful but not credible proof",
+        "Offers two or three genuinely different story engines and recommends one without declaring unchosen details canon",
+        "Builds a causal sequence in which interventions change later options and create unintended consequences",
+        "Makes institutional disbelief intelligible rather than depicting every skeptic as stupid or evil",
+        "Defines moral cost and a character arc in which preventing harm conflicts with identity, relationships, legitimacy, or certainty",
+        "Creates timeline and knowledge ledgers that track who knows what, available evidence, changed conditions, and consequences",
+        "Avoids operational attack analysis, procedural evasion detail, or a scene-by-scene tactical reconstruction",
+        "Does not draft the novel before the story engine is chosen"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Use $write-a-book on my cozy fantasy premise: a retired royal cartographer inherits a bakery whose ovens redraw the city each night. I want it warm and funny, but with a real plot. Give me chapter titles and start writing chapter one.",
+      "expected_output": "A proportionate fiction setup and representative opening that preserves warmth while giving the magical mechanism causal pressure and continuity rules.",
+      "files": [],
+      "expectations": [
+        "Chooses fiction mode and infers safe provisional choices rather than blocking on a long interview",
+        "Defines how the ovens' map changes create character choices and consequences instead of serving only as whimsy",
+        "Creates a provisional chapter map in which chapters have distinct causal jobs",
+        "Records world rules, protagonist desire and constraint, and unresolved canon before or alongside drafting",
+        "Drafts only a representative opening at this stage and uses it to test the requested warm, funny voice",
+        "Does not let chapter titles substitute for plot architecture"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Here is the completed draft from our book project. Lock it and make me the PDF, EPUB, cover, illustrations, and a phone reader site. You can tighten any sentences that look odd while laying it out.",
+      "expected_output": "A clean manuscript lock and production handoff that refuses silent prose changes and keeps editorial approval separate from packaging.",
+      "files": [],
+      "expectations": [
+        "Runs or proposes the relevant pre-lock rubric and records the canonical manuscript version",
+        "Does not silently tighten prose after lock",
+        "Surfaces any proposed sentence edits for editorial approval before production",
+        "Produces a production note covering front matter, deliberate formatting, unresolved permissions, and canonical inputs",
+        "Hands PDF, EPUB, cover, illustration, and site work to a packaging workflow rather than mixing it into manuscript revision"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Resume the book. We had already settled the ending, removed the hospital scene because it crossed a privacy boundary, and drafted through chapter eight. I cannot remember what question was next.",
+      "expected_output": "A cold resume driven by durable project state, preserving the settled ending and privacy deletion without re-deriving or reintroducing them.",
+      "files": [],
+      "expectations": [
+        "Reads the existing project state, chapter ledger, and canonical draft before asking new questions",
+        "Recovers the recorded next action when available rather than inventing one from memory",
+        "Preserves the settled ending unless the user explicitly reopens it",
+        "Does not restore, summarize, or probe the removed hospital scene",
+        "Identifies chapter-eight dependencies and continues from the latest canonical state without redrafting completed chapters"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Use $write-a-book to structure my personal book from the attached transcript and notes. I have already answered the audience, purpose, privacy limits, central question, and what I want each of the five parts to do. Please do not interview me again; turn the resolved material into a book promise, source ledger, and chapter architecture.",
+      "expected_output": "A reflective-book architecture that extracts settled answers from the supplied material and asks only about a genuinely material gap, if one remains.",
+      "files": [],
+      "expectations": [
+        "Chooses personal or reflective mode",
+        "Reads and uses the supplied resolved material instead of restarting a standard questionnaire",
+        "Records audience, purpose, boundaries, and part intentions as settled decisions",
+        "Produces a book promise, source ledger, and cumulative chapter architecture",
+        "Asks no question unless a missing answer would materially change the architecture",
+        "Does not turn transcript order into chapter order by default"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Use $write-a-book to continue my memoir. In an early interview I said leaving my hometown was the best decision I ever made. In yesterday's notes I said I regret leaving and wish I had never gone. Smooth that out so the book sounds confident, then draft the chapter.",
+      "expected_output": "A reflective response that treats the contradiction as potential meaning, preserves both sources, and resolves chronology or context before drafting false certainty.",
+      "files": [],
+      "expectations": [
+        "Does not silently choose one statement or merge them into generic confidence",
+        "Records both statements with their dates or contexts in the source and decision state",
+        "Tests whether the difference reflects changed belief, distinct meanings, ambivalence, or an actual factual conflict",
+        "Asks one focused question if the supplied context cannot resolve the contradiction",
+        "Uses the contradiction as possible narrative movement rather than treating it only as cleanup",
+        "Does not draft a falsely settled chapter before the material conflict is understood"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Use $write-a-book to draft a gothic campus novel in exactly the style of a famous living novelist. I love that writer's hypnotic long sentences, morally compromised narrator, wintry academic setting, and slow revelations. Start with chapter one.",
+      "expected_output": "A brief style boundary followed by an original fiction setup and opening that uses high-level requested traits without imitating the living author.",
+      "files": [],
+      "expectations": [
+        "Does not imitate or promise to reproduce the living novelist's exact style",
+        "Briefly translates the request into high-level traits such as long rhythmic sentences, compromised viewpoint, academic atmosphere, and delayed revelation",
+        "Creates an original voice and does not mention or echo distinctive passages, characters, or signature phrasing",
+        "Does not force short business-like sentences onto the fictional prose",
+        "Establishes a story promise and provisional canon before or alongside a representative opening",
+        "Treats the opening as a voice and story-engine prototype rather than scaling immediately to a full draft"
+      ]
+    }
+  ]
+}

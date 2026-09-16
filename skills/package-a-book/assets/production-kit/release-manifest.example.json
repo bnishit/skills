@@ -1,0 +1,25 @@
+{
+  "locked_source": {
+    "path": "source/locked-manuscript.md",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "outputs": {
+    "epub": "output/book.epub",
+    "pdf": "output/book.pdf",
+    "site": "output/site/index.html"
+  },
+  "fidelity": {
+    "source": "verification/source-stream.json",
+    "editions": {
+      "epub": "verification/epub-stream.json",
+      "pdf": "verification/pdf-stream.json",
+      "site": "verification/site-stream.json"
+    },
+    "allowed_additions": [
+      {
+        "id": "pdf-print-colophon",
+        "editions": ["pdf"]
+      }
+    ]
+  }
+}

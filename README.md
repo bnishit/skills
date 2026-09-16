@@ -40,6 +40,9 @@ npx skills update
 | [strip-it-down](skills/strip-it-down) | Teaches one hard idea from bedrock, one claim per turn, and stops on a question until you answer. Seven counted slots per chapter, so it cannot drift into a wall of text. |
 | [apprentice](skills/apprentice) | Takes you from cannot-do to can-do across many sessions, with the state on disk. Every session ends with a rep you owe before the next one. |
 | [second-life-writing](skills/second-life-writing) | Writes simple, audience-aware text in `brief` or `operational` mode. Both modes remove waste; operational mode keeps the detail that teams need to act later. |
+| [write-a-book](skills/write-a-book) | Develops personal or reflective books, nonfiction, and fiction from source material or a premise through discovery, architecture, drafting, revision, and manuscript lock. |
+| [package-a-book](skills/package-a-book) | Turns a locked manuscript into verified EPUB, PDF, and optional reader-site editions without silently changing the prose. |
+| [improve-a-skill](skills/improve-a-skill) | Tests whether a reusable agent skill improves real work, then hardens it through blind baselines, observable gates, and bounded iteration. |
 | [show-me](skills/show-me) | Answers with the smallest visual that makes the point — a tree, a diff, pseudocode, a Mermaid diagram, or one focused HTML page when it earns the tab. |
 | [restock](skills/restock) | What's happened lately on a topic, and — the part that matters — what on your shelf has since been superseded, corrected or retracted. |
 | [openrouter-integration](skills/openrouter-integration) | OpenRouter model and endpoint discovery, live discounts, dedicated media APIs, key/account spend diagnostics, routing, reasoning, batch controls, and Next.js / Express starters. |
@@ -49,7 +52,7 @@ npx skills update
 | [ux-reviewer](skills/ux-reviewer) | Specifies or reviews rendered screens, interaction states, accessibility, and exact copy. |
 | [product-editor](skills/product-editor) | Challenges a spec’s premise, cuts unnecessary features, and resolves product/design disagreements. |
 
-## The stack
+## The learning stack
 
 Five of these are one thing. Three entry points, depending on what you actually want, and they share the same two finishers.
 
@@ -78,6 +81,26 @@ Each skill declares its edges in a **Composes with** table at the top of its `SK
 Each still works alone. `strip-it-down` needs no library; `second-life-writing` and `show-me` are general skills reached for by anything whose output a person has to read or look at.
 
 **Convention for adding a skill to the stack:** put a `Composes with` table at the top, and write required handoffs as `**REQUIRED SUB-SKILL:** load X at <moment>` at the point in the flow where they fire — not as a description of what X does. A pointer that summarises the other skill gets read as a substitute for it, and the handoff silently stops happening. Never require a skill that isn't in this repo.
+
+## Book workflow
+
+The book skills separate editorial judgment from production so a layout pass cannot quietly rewrite approved prose.
+
+```text
+conversations · notes · research · fictional premise
+                         │
+                         ▼
+                  write-a-book
+    discover → architect → prototype → draft → revise → lock
+                         │
+                 locked manuscript
+                         │
+                         ▼
+                 package-a-book
+     art direction → EPUB · PDF · optional reader site → verify
+```
+
+`write-a-book` changes its method by mode: Socratic discovery for unresolved personal material, evidence boundaries for nonfiction, and causal worldbuilding for fiction. `package-a-book` starts only after manuscript lock, records the source hash, and verifies that the same ordered prose reached each edition. Publication and deployment remain separate, explicit actions.
 
 ## Product and design workflow
 
