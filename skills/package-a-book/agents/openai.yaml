@@ -1,0 +1,5 @@
+interface:
+  display_name: "Package a book"
+  short_description: "Turn locked Markdown into polished book editions"
+  default_prompt: "Use $package-a-book to turn my locked Markdown manuscript into a verified EPUB, PDF, and phone-first reader site."
+

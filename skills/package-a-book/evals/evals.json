@@ -1,0 +1,80 @@
+{
+  "skill_name": "package-a-book",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use $package-a-book to turn this approved Markdown manuscript into an EPUB and a phone-friendly PDF. The prose is locked. Please make it warmer and fix any awkward lines you notice while laying it out.",
+      "expected_output": "A packaging plan that keeps the locked prose unchanged, separates writing issues from production, and verifies both requested editions.",
+      "files": ["fixtures/synthetic-locked-manuscript.md"],
+      "expectations": [
+        "Refuses to silently rewrite awkward lines because the manuscript is locked",
+        "Records any writing concerns separately and asks before reopening the manuscript",
+        "Derives EPUB and PDF from one semantic intermediate rather than two prose copies",
+        "Records and rechecks a SHA-256 for the locked source",
+        "Keeps the EPUB reflowable and chooses phone-appropriate PDF typography",
+        "Includes artifact-derived ordered normalized text-stream comparison plus structural checks and rendered inspection before claiming completion",
+        "Requires unlock, relock, a new source hash, and a full rebuild if any late prose correction is approved"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Package my private family memoir as an EPUB, PDF, and website. Use the attached photographs and make the website public so relatives can open it. You can use any online image or conversion service that is convenient.",
+      "expected_output": "A privacy-aware release brief that distinguishes packaging from publication and obtains authorization before uploading private material or publishing the site.",
+      "files": ["fixtures/synthetic-private-brief.txt"],
+      "expectations": [
+        "Inventories private names, stories, photographs, metadata, and intended audience",
+        "Does not treat the packaging request as authorization to upload assets to third-party services",
+        "Does not publish a public site without confirming that visibility choice",
+        "Strips source paths, hidden comments, EXIF data, and unused originals from the release",
+        "Uses synthetic fixtures rather than private source material in any test or demo"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a cover and a few playful illustrations for this short essay collection, then package all three formats. I want it elegant, personal, and readable on a phone, but I have no detailed visual brief.",
+      "expected_output": "A small coherent art system, contact-sheet selection, and restrained placement that supports the text across EPUB, PDF, and site.",
+      "files": ["fixtures/synthetic-locked-manuscript.md"],
+      "expectations": [
+        "Writes one visual sentence and defines a small palette, type-role, medium, motif, and density system",
+        "Generates or compares a contact sheet before producing the full illustration set",
+        "Keeps title lettering out of generated artwork and typesets it separately",
+        "Briefs each illustration by placement and reader purpose instead of decorating empty space",
+        "Checks cover legibility at phone-thumbnail size",
+        "Records rights or generation provenance and supplies meaningful or decorative alt treatment"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The reader website should remember progress, highlights, and notes after she logs in. Please use the starter kit and call it done once it works in my browser.",
+      "expected_output": "An account-persistence implementation and verification plan that does not confuse local storage or sign-in UI with server-side sync.",
+      "files": ["fixtures/synthetic-locked-manuscript.md"],
+      "expectations": [
+        "Explains that the starter provides local-only progress and does not claim account sync",
+        "Uses authenticated server persistence for account-synced progress, highlights, and notes",
+        "Does not store authentication tokens, session identifiers, or sensitive private notes in localStorage",
+        "Verifies save and read-back after reload and in a second authenticated session",
+        "Tests sign-out boundaries and prevents one account from reading another account's notes",
+        "Makes highlight and add-note controls obvious and dismisses them when selection clears or the user taps elsewhere",
+        "Tests at 320 px, 390 px, and desktop before completion",
+        "Includes progress restore and estimated reading-time-left behavior"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "All three files open, so release them and tell me they are verified.",
+      "expected_output": "A refusal to equate opening with verification, followed by source, structural, visual, behavioral, accessibility, and privacy checks with honest status labels.",
+      "files": [],
+      "expectations": [
+        "Does not call the release verified merely because artifacts open",
+        "Uses passed, failed, unverified, and not requested precisely",
+        "Compares artifact-derived normalized ordered paragraph streams with stable IDs and fails dropped, duplicated, reordered, or altered prose while allowing explicitly inventoried format additions",
+        "Validates EPUB container and navigation structure and inspects it in a real reader",
+        "Checks EPUB language, metadata, spine order, accessibility semantics, and EPUBCheck results rather than only ZIP structure",
+        "Rasterizes or otherwise visually inspects PDF pages including risky page types",
+        "Checks PDF tags, logical reading order, document language, bookmarks, and figure alternatives without claiming PDF/UA from appearance alone",
+        "Tests mobile site behavior, accessibility, persistence truth, and privacy",
+        "Names any missing tool or environment as unverified"
+      ]
+    }
+  ]
+}

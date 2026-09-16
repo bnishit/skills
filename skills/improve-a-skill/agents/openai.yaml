@@ -1,0 +1,4 @@
+interface:
+  display_name: "Improve a skill"
+  short_description: "Test and harden reusable agent skills"
+  default_prompt: "Use $improve-a-skill to evaluate this skill against realistic tasks and make evidence-backed improvements."

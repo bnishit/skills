@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write a book"
+  short_description: "Develop and revise a book-length manuscript"
+  default_prompt: "Use $write-a-book to turn my material or premise into a structured, voice-faithful manuscript."
