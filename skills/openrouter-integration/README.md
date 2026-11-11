@@ -9,7 +9,7 @@ Landing page: [bnishit.github.io/openrouter-skill](https://bnishit.github.io/ope
 ## Install
 
 ```bash
-npx skills add bnishit/openrouter-skill
+npx skills add bnishit/skills --skill openrouter-integration --global
 ```
 
 Works with any AI agent that supports the skills install flow.
@@ -21,10 +21,10 @@ After install, invoke it as `$openrouter-integration`.
 Direct git clone:
 
 ```bash
-git clone https://github.com/bnishit/openrouter-skill.git
+git clone https://github.com/bnishit/skills.git
 ```
 
-Install from `openrouter-skill`. Use `$openrouter-integration` in prompts.
+Install from `skills/skills/openrouter-integration`. Use `$openrouter-integration` in prompts.
 
 ## Capabilities
 
@@ -35,7 +35,7 @@ Install from `openrouter-skill`. Use `$openrouter-integration` in prompts.
 - **Cost Tracking** — look up exact cost per generation with real billing data, not estimates
 - **Spend Controls** — compare real workloads, inspect key and account headroom, and choose batch or service tiers deliberately
 - **Routing & Fallbacks** — route to cheapest provider and fall back automatically when one goes down
-- **Batch & Reasoning** — handle 24-hour batch work, reasoning details, latest aliases, and served service tiers
+- **Batch & Reasoning** — handle asynchronous batch work, provider deadlines, reasoning details, latest aliases, and served service tiers
 - **Tool Calling** — agentic loops with safety limits and structured output with Zod validation
 - **Provider & Free Models** — filter by provider and find zero-cost models automatically
 - **Starter Templates** — Next.js and Express routes ready to copy, not configure
@@ -126,8 +126,14 @@ Treat official OpenRouter documentation as the source of truth for endpoints, pa
 Use:
 
 ```bash
-python3 scripts/check_openrouter_docs.py --quick
+python3 scripts/check_openrouter_docs.py --quick --strict
+python3 -m unittest discover -s scripts/tests -p "test_*.py"
+npx --yes tsx --test assets/tests/*.test.ts
 ```
+
+Run these commands from this skill directory. TypeScript tests use `tsx` to resolve the extensionless imports used by the templates. Installed tests point to the installed helpers. Live smoke calls require your own key and may spend credits.
+
+The installer checks all destination files before copying. It customizes only installed files; existing app files stay untouched, including with `--force`. Add your app’s authentication, access limits, and spend controls before exposing the proxy publicly.
 
 When the script flags drift, update the templates and examples against the relevant OpenRouter documentation.
 
