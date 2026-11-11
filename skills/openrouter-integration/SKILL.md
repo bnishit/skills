@@ -149,4 +149,3 @@ The public model catalogs can be read without a key. The tools catalog requires 
 - For PDFs, choose `cloudflare-ai` for clean text PDFs, `mistral-ocr` for scanned or image-heavy PDFs, and `native` only when the selected model supports file input natively. `pdf-text` is deprecated.
 - Do not assume every model supports `response_format`, `structured_outputs`, `tools`, or every OpenAI parameter; check `supported_parameters` first.
 - When a request depends on specific parameters such as tools or `response_format`, prefer `provider.require_parameters: true`.
-
